@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-mobile-web-app-title" content="Alice Cooper">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <script src="https://connect.facebook.net/en_US/fbinstant.6.2.js"></script>
+
+    <script>
+        FBInstant.initializeAsync()
+            .then(function () {
+                console.log('initializeAsync ready');
+                FBInstant.setLoadingProgress(100);
+                FBInstant.startGameAsync()
+            })
+            .catch(function (e) {
+                console.log('Error: ',e);
+            })
+    </script>
+
+
+</head>
+<body>
+
+</body>
+</html>
